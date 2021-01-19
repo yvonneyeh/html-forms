@@ -33,31 +33,43 @@
         </h2>
 
         <form>
-        Your name <input name = "name" type = "text">
+        <label for = "input-name">Your name</label><input name = "name" type = "text" id = "input-name">
         <br>
-        Who are we sending this to? <input type = "text" name = "recipient">
+        <label for = "input-recipient"> Who are we sending this to? </label><input type = "text" name = "recipient" id = "input-recipient">
         <br>
+
+        <label for = "select-melon">
         Choose a melon 
-        <select>
+        </label>
+        <select id = "select-melon">
         <option value = "watermelon">Watermelon </option>
         <option value = "canteloupe">Canteloupe</option>
         <option value = "honeydew">Honeydew</option>
         </select>
         <br>
+
         When should we deliver?
-        <input type = "radio" name = "time" value = "am">Morning</input>
-        <input type = "radio" name = "time" value = "pm">Evening</input>
-        <input type = "radio" name = "time" value = "any">Any time</input>
+        <input type = "radio" name = "time" value = "am" id = "morning"><label for = "morning">Morning</label></input>
+        <input type = "radio" name = "time" value = "pm" id = "evening"><label for = "evening">Evening</label></input>
+        <input type = "radio" name = "time" value = "any" id = "any time"><label for = "any time">Any time</label></input>
         <br>
+
+        <label for = "textarea-messsage">
         Enter your message:
-        <textarea name = "message"></textarea>
+        </label>
+        <textarea name = "message" id = "textarea-messsage"></textarea>
+        
         <br>
+        <label for = "input-subscribe">
         Subscribe to our newsletter
-        <input type = "checkbox" value = "yes">Yes</input>
+        </label>
+        <input type = "checkbox" value = "yes" id = "input-subscribe">Yes</input>
         <br>
-        <button type = "submit">
+        <label for = "submit-form">
+        <button type = "submit" id = "submit-form">
         Submit
         </button>
+        </label>
         </form>
     </body>
 </html>
